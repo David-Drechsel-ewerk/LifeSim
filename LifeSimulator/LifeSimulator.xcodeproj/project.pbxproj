@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14B009341891165E00554942 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B009331891165E00554942 /* Foundation.framework */; };
+		14B009361891165E00554942 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B009351891165E00554942 /* CoreGraphics.framework */; };
+		14B009381891165E00554942 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B009371891165E00554942 /* UIKit.framework */; };
+		14B0093E1891165E00554942 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14B0093C1891165E00554942 /* InfoPlist.strings */; };
+		14B009401891165E00554942 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0093F1891165E00554942 /* main.m */; };
+		14B009441891165E00554942 /* DDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B009431891165E00554942 /* DDAppDelegate.m */; };
+		14B009471891165E00554942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B009451891165E00554942 /* Main.storyboard */; };
+		14B0094A1891165E00554942 /* DDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B009491891165E00554942 /* DDViewController.m */; };
+		14B0094C1891165E00554942 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14B0094B1891165E00554942 /* Images.xcassets */; };
+		14B009531891165E00554942 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B009521891165E00554942 /* XCTest.framework */; };
+		14B009541891165E00554942 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B009331891165E00554942 /* Foundation.framework */; };
+		14B009551891165E00554942 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B009371891165E00554942 /* UIKit.framework */; };
+		14B0095D1891165E00554942 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14B0095B1891165E00554942 /* InfoPlist.strings */; };
+		14B0095F1891165E00554942 /* LifeSimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0095E1891165E00554942 /* LifeSimulatorTests.m */; };
+		14B0096B189116B000554942 /* DDLifeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0096A189116B000554942 /* DDLifeCell.m */; };
+		14B0096E1891176A00554942 /* DDMaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0096D1891176A00554942 /* DDMaleCell.m */; };
+		14B009711891178400554942 /* DDFemaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B009701891178400554942 /* DDFemaleCell.m */; };
+		14B00974189117FC00554942 /* DDLifeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B00973189117FC00554942 /* DDLifeFactory.m */; };
+		14B0097718911AE800554942 /* DDGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0097618911AE800554942 /* DDGridView.m */; };
+		14B0097A18912AF700554942 /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B0097918912AF700554942 /* Functions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14B009561891165E00554942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14B009281891165E00554942 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B0092F1891165E00554942;
+			remoteInfo = LifeSimulator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14B009301891165E00554942 /* LifeSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B009331891165E00554942 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14B009351891165E00554942 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14B009371891165E00554942 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		14B0093B1891165E00554942 /* LifeSimulator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LifeSimulator-Info.plist"; sourceTree = "<group>"; };
+		14B0093D1891165E00554942 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14B0093F1891165E00554942 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14B009411891165E00554942 /* LifeSimulator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LifeSimulator-Prefix.pch"; sourceTree = "<group>"; };
+		14B009421891165E00554942 /* DDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
+		14B009431891165E00554942 /* DDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
+		14B009461891165E00554942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14B009481891165E00554942 /* DDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDViewController.h; sourceTree = "<group>"; };
+		14B009491891165E00554942 /* DDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDViewController.m; sourceTree = "<group>"; };
+		14B0094B1891165E00554942 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		14B009511891165E00554942 /* LifeSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B009521891165E00554942 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		14B0095A1891165E00554942 /* LifeSimulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LifeSimulatorTests-Info.plist"; sourceTree = "<group>"; };
+		14B0095C1891165E00554942 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14B0095E1891165E00554942 /* LifeSimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeSimulatorTests.m; sourceTree = "<group>"; };
+		14B00969189116B000554942 /* DDLifeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLifeCell.h; sourceTree = "<group>"; };
+		14B0096A189116B000554942 /* DDLifeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLifeCell.m; sourceTree = "<group>"; };
+		14B0096C1891176A00554942 /* DDMaleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMaleCell.h; sourceTree = "<group>"; };
+		14B0096D1891176A00554942 /* DDMaleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMaleCell.m; sourceTree = "<group>"; };
+		14B0096F1891178400554942 /* DDFemaleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFemaleCell.h; sourceTree = "<group>"; };
+		14B009701891178400554942 /* DDFemaleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFemaleCell.m; sourceTree = "<group>"; };
+		14B00972189117FC00554942 /* DDLifeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLifeFactory.h; sourceTree = "<group>"; };
+		14B00973189117FC00554942 /* DDLifeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLifeFactory.m; sourceTree = "<group>"; };
+		14B0097518911AE800554942 /* DDGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGridView.h; sourceTree = "<group>"; };
+		14B0097618911AE800554942 /* DDGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGridView.m; sourceTree = "<group>"; };
+		14B0097818912AD900554942 /* Functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
+		14B0097918912AF700554942 /* Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14B0092D1891165E00554942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B009361891165E00554942 /* CoreGraphics.framework in Frameworks */,
+				14B009381891165E00554942 /* UIKit.framework in Frameworks */,
+				14B009341891165E00554942 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B0094E1891165E00554942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B009531891165E00554942 /* XCTest.framework in Frameworks */,
+				14B009551891165E00554942 /* UIKit.framework in Frameworks */,
+				14B009541891165E00554942 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B009271891165E00554942 = {
+			isa = PBXGroup;
+			children = (
+				14B009391891165E00554942 /* LifeSimulator */,
+				14B009581891165E00554942 /* LifeSimulatorTests */,
+				14B009321891165E00554942 /* Frameworks */,
+				14B009311891165E00554942 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14B009311891165E00554942 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14B009301891165E00554942 /* LifeSimulator.app */,
+				14B009511891165E00554942 /* LifeSimulatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14B009321891165E00554942 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14B009331891165E00554942 /* Foundation.framework */,
+				14B009351891165E00554942 /* CoreGraphics.framework */,
+				14B009371891165E00554942 /* UIKit.framework */,
+				14B009521891165E00554942 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14B009391891165E00554942 /* LifeSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				14B009421891165E00554942 /* DDAppDelegate.h */,
+				14B009431891165E00554942 /* DDAppDelegate.m */,
+				14B009451891165E00554942 /* Main.storyboard */,
+				14B009481891165E00554942 /* DDViewController.h */,
+				14B009491891165E00554942 /* DDViewController.m */,
+				14B0097518911AE800554942 /* DDGridView.h */,
+				14B0097618911AE800554942 /* DDGridView.m */,
+				14B0097818912AD900554942 /* Functions.h */,
+				14B0097918912AF700554942 /* Functions.m */,
+				14B009681891168200554942 /* Model */,
+				14B0094B1891165E00554942 /* Images.xcassets */,
+				14B0093A1891165E00554942 /* Supporting Files */,
+			);
+			path = LifeSimulator;
+			sourceTree = "<group>";
+		};
+		14B0093A1891165E00554942 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14B0093B1891165E00554942 /* LifeSimulator-Info.plist */,
+				14B0093C1891165E00554942 /* InfoPlist.strings */,
+				14B0093F1891165E00554942 /* main.m */,
+				14B009411891165E00554942 /* LifeSimulator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14B009581891165E00554942 /* LifeSimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				14B0095E1891165E00554942 /* LifeSimulatorTests.m */,
+				14B009591891165E00554942 /* Supporting Files */,
+			);
+			path = LifeSimulatorTests;
+			sourceTree = "<group>";
+		};
+		14B009591891165E00554942 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14B0095A1891165E00554942 /* LifeSimulatorTests-Info.plist */,
+				14B0095B1891165E00554942 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14B009681891168200554942 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14B00969189116B000554942 /* DDLifeCell.h */,
+				14B0096A189116B000554942 /* DDLifeCell.m */,
+				14B0096C1891176A00554942 /* DDMaleCell.h */,
+				14B0096D1891176A00554942 /* DDMaleCell.m */,
+				14B0096F1891178400554942 /* DDFemaleCell.h */,
+				14B009701891178400554942 /* DDFemaleCell.m */,
+				14B00972189117FC00554942 /* DDLifeFactory.h */,
+				14B00973189117FC00554942 /* DDLifeFactory.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14B0092F1891165E00554942 /* LifeSimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B009621891165E00554942 /* Build configuration list for PBXNativeTarget "LifeSimulator" */;
+			buildPhases = (
+				14B0092C1891165E00554942 /* Sources */,
+				14B0092D1891165E00554942 /* Frameworks */,
+				14B0092E1891165E00554942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LifeSimulator;
+			productName = LifeSimulator;
+			productReference = 14B009301891165E00554942 /* LifeSimulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14B009501891165E00554942 /* LifeSimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B009651891165E00554942 /* Build configuration list for PBXNativeTarget "LifeSimulatorTests" */;
+			buildPhases = (
+				14B0094D1891165E00554942 /* Sources */,
+				14B0094E1891165E00554942 /* Frameworks */,
+				14B0094F1891165E00554942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14B009571891165E00554942 /* PBXTargetDependency */,
+			);
+			name = LifeSimulatorTests;
+			productName = LifeSimulatorTests;
+			productReference = 14B009511891165E00554942 /* LifeSimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14B009281891165E00554942 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DD;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "David Drechsel";
+				TargetAttributes = {
+					14B009501891165E00554942 = {
+						TestTargetID = 14B0092F1891165E00554942;
+					};
+				};
+			};
+			buildConfigurationList = 14B0092B1891165E00554942 /* Build configuration list for PBXProject "LifeSimulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14B009271891165E00554942;
+			productRefGroup = 14B009311891165E00554942 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14B0092F1891165E00554942 /* LifeSimulator */,
+				14B009501891165E00554942 /* LifeSimulatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14B0092E1891165E00554942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B0094C1891165E00554942 /* Images.xcassets in Resources */,
+				14B0093E1891165E00554942 /* InfoPlist.strings in Resources */,
+				14B009471891165E00554942 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B0094F1891165E00554942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B0095D1891165E00554942 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14B0092C1891165E00554942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B0097718911AE800554942 /* DDGridView.m in Sources */,
+				14B009441891165E00554942 /* DDAppDelegate.m in Sources */,
+				14B0094A1891165E00554942 /* DDViewController.m in Sources */,
+				14B0097A18912AF700554942 /* Functions.m in Sources */,
+				14B009401891165E00554942 /* main.m in Sources */,
+				14B00974189117FC00554942 /* DDLifeFactory.m in Sources */,
+				14B0096B189116B000554942 /* DDLifeCell.m in Sources */,
+				14B0096E1891176A00554942 /* DDMaleCell.m in Sources */,
+				14B009711891178400554942 /* DDFemaleCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B0094D1891165E00554942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B0095F1891165E00554942 /* LifeSimulatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14B009571891165E00554942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14B0092F1891165E00554942 /* LifeSimulator */;
+			targetProxy = 14B009561891165E00554942 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14B0093C1891165E00554942 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14B0093D1891165E00554942 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		14B009451891165E00554942 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14B009461891165E00554942 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14B0095B1891165E00554942 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14B0095C1891165E00554942 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14B009601891165E00554942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		14B009611891165E00554942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14B009631891165E00554942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LifeSimulator/LifeSimulator-Prefix.pch";
+				INFOPLIST_FILE = "LifeSimulator/LifeSimulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		14B009641891165E00554942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LifeSimulator/LifeSimulator-Prefix.pch";
+				INFOPLIST_FILE = "LifeSimulator/LifeSimulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		14B009661891165E00554942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LifeSimulator.app/LifeSimulator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LifeSimulator/LifeSimulator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LifeSimulatorTests/LifeSimulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		14B009671891165E00554942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LifeSimulator.app/LifeSimulator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LifeSimulator/LifeSimulator-Prefix.pch";
+				INFOPLIST_FILE = "LifeSimulatorTests/LifeSimulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14B0092B1891165E00554942 /* Build configuration list for PBXProject "LifeSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B009601891165E00554942 /* Debug */,
+				14B009611891165E00554942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B009621891165E00554942 /* Build configuration list for PBXNativeTarget "LifeSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B009631891165E00554942 /* Debug */,
+				14B009641891165E00554942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		14B009651891165E00554942 /* Build configuration list for PBXNativeTarget "LifeSimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B009661891165E00554942 /* Debug */,
+				14B009671891165E00554942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14B009281891165E00554942 /* Project object */;
+}
